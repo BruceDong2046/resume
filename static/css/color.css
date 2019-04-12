@@ -1,0 +1,36 @@
+/* 颜色样式  按字母顺序排列*/
+a{
+  color:#999;
+}
+.redColor{
+  color: #C40000 !important;
+}
+div.searchDiv{
+  background-color: #C40000;
+}
+div.searchDiv button{
+  background-color: #C40000;
+  color: white;
+}
+div.searchBelow{
+  margin-top: 3px;
+  margin-left: -20px;
+}
+div.searchBelow span{
+  color: #999;
+}
+
+nav.top{
+  background-color: #f2f2f2;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-bottom:1px solid  #e7e7e7;
+}
+nav.top span, nav.top a{
+  color: #999;
+  margin: 0px 10px 0px 10px;
+}
+nav.top a:hover{
+  color: #C40000;
+  text-decoration: none;
+}

@@ -11,16 +11,16 @@ if (!String.prototype.format) {
   };
 }
 
-
+// 设置文本的可编辑性
 jQuery(document).ready(function($) {
-    $(".left-label").attr('contenteditable', 'true');
-    $(".label-value").attr('contenteditable', 'true');
-    $(".info-title").attr('contenteditable', 'true');
-    $("h3").attr('contenteditable', 'true');
-    $("p").attr('contenteditable', 'true');
-    $(".right-paragraph p").attr('contenteditable', 'true');
-    $("#username").attr('contenteditable', 'true');
-    $("#persona-tag").attr('contenteditable', 'true');
+    $(".left-label").attr('contenteditable', 'false');
+    $(".label-value").attr('contenteditable', 'false');
+    $(".info-title").attr('contenteditable', 'false');
+    $("h3").attr('contenteditable', 'false');
+    $("p").attr('contenteditable', 'false');
+    $(".right-paragraph p").attr('contenteditable', 'false');
+    $("#username").attr('contenteditable', 'false');
+    $("#persona-tag").attr('contenteditable', 'false');
     $(".info-unit ul li").append('<span class="item-remove"><i class="iconfont icon-delete"></i></span>');
     
     $(".info-unit").filter(function(index) {
@@ -65,13 +65,14 @@ jQuery(document).ready(function($) {
         $(this).children('.item-remove').css('visibility', 'hidden');
     });
 
-    $('.unit-remove').click(function(event) {
-        $(this).closest(".info-unit").remove();
-    });
+    // 删除页面元素
+    // $('.unit-remove').click(function(event) {
+    //     $(this).closest(".info-unit").remove();
+    // });
 
-    $('.item-remove').click(function(event) {
-        $(this).closest("li").remove();
-    });
+    // $('.item-remove').click(function(event) {
+    //     $(this).closest("li").remove();
+    // });
 
     $('.item-add').click(function(event) {
         var unit = $(this).closest(".info-unit");
