@@ -1,12 +1,20 @@
-/* 布局样式  按字母顺序排列 */
+/* 布局样式  */
 * {
   padding: 0;
   margin: 0;
   -webkit-box-sizing:border-box;
   -moz-box-sizing:border-box;
-  box-sizing:border-box;
-  /* width: 100%; */
+	box-sizing:border-box;
 }
+
+/* 外层包装 */
+.container{
+ margin: 0;
+ padding: 0;
+ border: 0;
+ width: 100%;
+}
+/* 搜素 */
 .searchDiv{
   width: 400px;
   margin-top: -100px;
@@ -16,6 +24,7 @@
   height: 40px;
   display: block;
 }
+/* 搜索框 */
 .searchDiv input{
   width: 275px;
   border: 1px solid transparent;
@@ -23,6 +32,7 @@
   margin: 1px;
   outline:none;
 }
+/* 搜索按钮 */
 .searchDiv button{
   width: 110px;
   border: 1px solid transparent;
@@ -37,16 +47,19 @@
   padding: 0px 20px 0px 20px;
   font-size: 14px;
 }
+/* 页脚 */
 .footer{
 	margin: 0px 0px;
 	border-top-style: solid;
 	border-top-width: 1px;
 	border-top-color: #e7e7e7;
+	width: 100%;
 }
 .footer_ensure{
 	margin-top: 24px;
 	margin-bottom: 24px;
 	text-align: center;
+	width: 100%;
 }
 .footer_desc{
 	border-top-style: solid;
@@ -54,6 +67,7 @@
 	border-top-color: #e7e7e7;
 	padding-top: 30px;
 	margin: 0px 20px;
+	width: 100%;
 }
 .descColumn{
 	width: 20%;
@@ -69,14 +83,12 @@ div.footer_desc div.descColumn span.descColumnTitle{
 	display: block;
 	padding-top: 3px;
 }
-.copyright{
-	position: absolute;
-	margin-left: -125px;
-  background-color: black;
+div.copyright{
+    background-color: black;
 	border-top-style: solid;
 	border-top-width: 2px;
-  border-top-color: #C40000;
-  width: 100%;  
+    border-top-color: #C40000;
+  
 }
 
 .slash{
@@ -123,6 +135,7 @@ img.logo{
 }
 div.categoryWithCarousel div.headbar{
 	background-color: #DD2727;
+	padding-left: 200px;
 }
 div.categoryWithCarousel div.head{
 	width: 200px;
@@ -149,11 +162,16 @@ div.categoryWithCarousel div.rightMenu span{
 div.categoryWithCarousel div.rightMenu img{
 	height: 30px;
 }
+
+/* 轮播 */
 .carousel-of-product{
 	height: 510px;
-	width:1024px;
-	margin:0px auto;
+	max-width: 100%;
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-left: 280px;
 }
+
 img.carouselImage{
 	height: 510px !important;
 }
@@ -167,13 +185,13 @@ img.carouselImage{
 }
 
 /* 产品菜单 */
-.categoryMenu{
+div.categoryMenu{
 	width: 200px;
 	background-color: #e2e2e3;
-	margin-left: 20px;
 	margin-top: -510px;
+	margin-left: 20px;
 	position: absolute;
-	left: 0;
+	left:300px;
 	top: 0;
 	z-index: 1;
 }
@@ -184,25 +202,28 @@ img.carouselImage{
 	color: lightskyblue;
 	text-decoration: none;
 }
-.productsAsideCategorys{
-	width: 800px;
+
+div.productsAsideCategorys{
+	width: 600px;
 	height: 510px;
 	background-color: white;
-	margin-top: -500px;
-	margin-left: 220px;
+	margin-top: -510px;
+	margin-left: 400px;
 	position: absolute;
 	left: 0;
 	top: 0;
 	z-index: 1;
 }
 div.productsAsideCategorys div.row{
-	margin: 20px 80px 0px 80px;
+	/* margin: 20px 80px 0px 80px; */
+	margin-left: 200px;
 }
 div.productsAsideCategorys div.row div.seperator{
 	margin-top: 20px;
 	border-bottom-style: dashed;
 	border-bottom-width: 1px;
 	border-bottom-color: #e7e7e7;
+	margin-left: 200px;
 }
 .productsAsideCategorys a{
 	color: #999;
@@ -223,6 +244,7 @@ div.productsAsideCategorys div.row div.seperator{
 }
 .eachCategory:hover{
 	background-color: white;
+	
 }
 
 /* 产品展示 */
@@ -265,30 +287,13 @@ div.categoryWithCarousel div.eachCategory {
 	padding-left: 10px;
 	font-size: 14px;
 }
-div.productItem {
-	width: 189px;
-	height: 285px;
-	border: 1px solid white;
-	background-color: white;
-	margin: 8px 4px;
-	float: left;
-	cursor: pointer;
-}
+
 div.categoryWithCarousel div.carouselAboutProduct {
 	width: 600px;
 	display: inline-block;
 }
-div.carousel-of-product {
-	max-width: 100%;
-	height: 510px;
-}
-div.productItem span.productPrice {
-	font-size: 16px;
-	color: #FF003A;
-	display: block;
-	padding-left: 16px;
-	margin-top: -10px;
-}
+
+
 img.carouselImage {
 	height: 510px !important;
 }
@@ -376,7 +381,7 @@ img.catear {
 	position: absolute;
 	height: 15px;
 	margin-top: 195px;
-	margin-left: 110px;
+	margin-left: 10px;
 	display: none;
 }
 div.categoryWithCarousel div.rightMenu {
@@ -434,4 +439,94 @@ nav.top div.row div {
 }
 div.productsAsideCategorys div.row {
 	margin: 20px 80px 0px 80px;
+}
+
+
+/* 产品展示 二*/
+div.categoryPageDiv{
+	max-width: 1013px;
+	margin: 10px auto;
+}
+div.categoryProducts{
+	padding: 0px 20px 40px 20px;
+}
+div.productUnit{
+	width: 225px;
+	height: 338px;
+	border: 1px solid #fff;
+	background-color: white;
+	margin: 12px 5px;
+	float: left;
+}
+div.productUnit:hover{
+	border:1px solid #C40000;
+}
+div.productUnitFrame{
+	border:1px solid #eee;
+	height:100%;
+}
+div.productUnitFrame:hover{
+	border:1px solid #C40000;
+}
+div.productUnit img.productImage{
+	width: 100%;
+	height: 190px;
+}
+div.productUnit span.productPrice{
+	font-size: 20px;
+	color: #CC0000;
+	display: block;
+	padding-left: 4px;
+}
+div.productUnit a.productLink{
+	margin: 10px 0px;
+	color: #333333;
+	display: block;
+	height:34px;
+}
+div.productUnit a.productLink:hover{
+	text-decoration: underline;
+	color: #C40000;
+}
+div.productUnit a.tmallLink{
+	margin: 10px 0px;
+	color: #999999;
+	display:block;
+	text-decoration: underline;
+}
+div.productUnit a.tmallLink:hover{
+	text-decoration: underline;
+	color: #C40000;
+}
+div.productUnit div.productInfo{
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #EEEEEE;
+	color:#999999;
+}
+div.productUnit span.productDealNumber{
+	font-weight: bold;
+	color: #B57C5B;
+}
+div.productUnit span.productReview{
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-left-color: #EEEEEE;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #EEEEEE;
+}
+div.productUnit span.productReviewNumber{
+	font-weight: bold;
+	color: #3388BB;
+}
+div.productUnit span.monthDeal, div.productUnit span.productReview{
+	display: inline-block;
+	width: 90px;
+	height:29px;
+	padding-top: 5px;
+	padding-left: 5px;
+}
+div.productUnit span.wangwang{
+	padding-left: 3px;
 }

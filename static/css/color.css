@@ -3,13 +3,13 @@ a{
   color:#999;
 }
 .redColor{
-  color: #C40000 !important;
+  color: #ff002d !important;
 }
 div.searchDiv{
-  background-color: #C40000;
+  background-color: #ff002d;
 }
 div.searchDiv button{
-  background-color: #C40000;
+  background-color: #ff002d;
   color: white;
 }
 div.searchBelow{
@@ -31,6 +31,6 @@ nav.top span, nav.top a{
   margin: 0px 10px 0px 10px;
 }
 nav.top a:hover{
-  color: #C40000;
+  color: #ff002d;
   text-decoration: none;
 }

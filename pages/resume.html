@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>简历模板</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="static/css/style.css">
+    <link href="../images/favicon.png" rel="shortcut icon" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.0/remodal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.0/remodal-default-theme.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../tmall/styles/basic.css">
+    <link href="../resume/images/favicon.png" rel="shortcut icon" type="image/x-icon">
+     <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+     <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+     <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.0/remodal.min.js"></script>
+    <script src="static/js/script.js"></script>
+    <!-- <script src="../tmall/scripts/modernizr-1.6.min.js"></script>
+    <script src="../tmall/scripts/showAction.js"></script> -->
+    <style>
+        body{
+            /* background-color: rgb(252, 253, 253);
+            font-family: sans-serif, Microsoft Yahei, Helvetica Neue;
+            zoom: 80%;
+            margin: 0;
+             */
+             padding-top: 55px;
+        }
+        .panel-default {
+            border-radius: 15px !important;
+            background-color:azure !important;
+            border-top: 0 !important;
+
+        }
+        /* .panel-heading{
+            border-top-left-radius: 15px !important;
+            border-top-right-radius: 15px !important;
+        } */
+        .redColor{
+        color: #C40000 !important;
+        }
+        .panel{
+            margin-top: 0px;
+        }
+        .jumbotron{
+            border-radius: 15px !important;
+        }
+        
+    </style>
+  
+</head>
+<body class="container">
+    <header>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <div class="navbar-brand" contenteditable="true">Personal Resume</div>
+                    <!-- 添加小屏下下拉列表按钮 -->
+                    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#divNav">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div id="divNav" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <button class="btn btn-success navbar-btn" type="button" data-toggle="modal" data-target="#divModal" title="Print">Print</button>
+                            <div class="modal fade" id="divModal">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button class="close" type="button" data-dismiss="modal"><span>&times;</span></button>
+                                            <h4 class="modal-title">Print Resume</h4>
+                                        </div>
+                                        <div class="modal-body" >
+                                            请单击浏览器“更多”选项选择打印功能。
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button class="btn btn-default" type="button" data-dismiss="modal">Close</button>
+                                            <button class="btn btn-primary" type="button">Print</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        <button class="btn btn-info navbar-btn" data-toggle="tooltip" type="button" data-placement="buttom" title="Download">Download</button>
+                        <script type="text/javascript">
+                        // 鼠标放上去时的弹出提示
+                            $(funtion(){
+                                $('[data-toggle="tooltip"]').tooltip();
+                            });
+                        </script>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+        </nav>
+    </header>
+
+    <div class="row">
+    <!-- 左侧 -->
+        <div class="col-sm-3">
+            <div class="panel panel-default">
+                <div class="panel-heading" contenteditable="true">Personal Info</div>
+                <div class="panel-body">
+                    <img src="../images/model.jpg" class="img-responsive img-rounded img-thumbnail" alt="Me" onmouseover="this.src='../images/dong.jpg'" onmouseout="this.src='../images/model.jpg'">
+                    <!-- <p class="text-center text-primary">董颖英</p> -->
+                    <h2 class="text-center text-primary" contenteditable="true">董颖英</h1>
+                <h4 class="text-center text-primary" contenteditable="true">Javascript/ Web / 前端</h4>
+                    <address>
+                        <strong>广东</strong><br>
+                        <span class="glyphicon glyphicon-home" title="Address"></span><kbd contenteditable="true"> 深圳龙岗区</kbd><br>
+                        <span class="glyphicon glyphicon-file" title="PostalCoded" ></span> <text contenteditable="true">201201</text><br>
+                        <span class="glyphicon glyphicon-phone" title="Mobile"></span> <text contenteditable="true">13418513207</text><br>
+                        <span class="glyphicon glyphicon-heart redColor" title="desire"> </span> <text contenteditable="true">求职意向：前端实习</text><br>
+                        <span class="glyphicon glyphicon-envelope" title="Email"></span><code contenteditable="true"> 1204578299@qq.com</code>
+                    </address>
+                </div>
+            </div>
+            <div class="panel panel-info">
+                <div class="panel panel-heading"><h5 contenteditable="true">Personal Skill</h1></div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <span class="text-muted">HTML</span>
+                        </div>
+                        <div class="col-sm-9">
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped active" style="width: 50%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- <div class="row">
+                        <div class="col-sm-3">
+                            <span class="text-success">IOS</span>
+                        </div>
+                        <div class="col-sm-9">
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped progress-bar-success active" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div> -->
+
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <span class="text-info"></span><label class="left-label" contenteditable="true">JavaScript</label>
+                            
+                        </div>
+                        <div class="col-sm-9">
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped progress-bar-info active" style="width: 70%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <span class="text-warning">JQuery</span>
+                        </div>
+                        <div class="col-sm-9">
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped progress-bar-warning active" style="width: 65%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <span class="text-danger">CSS</span>
+                        </div>
+                        <div class="col-sm-9">
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped progress-bar-danger active" style="width: 50%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="panel panel-primary">
+                <div class="panel panel-heading">ContactMe</div>
+                <div class="panel-body">
+                    
+                    <img src="../resume/images/dong.jpg" class="img-responsive img-rounded img-thumbnail" alt="Me" onmouseover="this.src='../resume/images/model.jpg'" onmouseout="this.src='../resume/images/dong.jpg'">
+                </div>
+            </div>
+
+        </div>
+        <!-- 右侧 -->
+        <div class="col-sm-9">
+            <div class="jumbotron">
+                <p class="text-left small">
+                    <strong>自我评价：</strong>
+                    <br>1、良好的公共关系意识，善于沟通，做事冷静，沉着;
+                    <br>2、良好的心态和责任感，吃苦耐劳，勇于面对挑战;
+                    <br>3、正直和努力是我做人的原则；沉着和冷静是我遇事的态度.
+                    
+                <br>Don't panic I‘m a programmer
+                </p>
+            </div>
+
+            <div class="panel-group" id="accoradion"></div>
+                <div class="panel panel-default">
+                <div class="panel-heading">
+                    <span class="glyphicon glyphicon-user" aria-hidden="true"></span> 教育背景
+                </div>
+                <div class="panel-body">
+                    <strong>2016.09—2019.6</strong>    
+                    <br>深圳信息职业技术学院   <p>数字媒体应用技术专业  <p></p>大专学历
+                    <p>主修专业：视觉效果图制作，视频剪辑制作，摄影课程，网页设计与制作，多媒体剪辑与数据库等
+                    
+                </div>
+                </div>
+                <div class="panel panel panel-primary">
+                <div class="panel-heading">
+                    <span class="glyphicon glyphicon-flag" aria-hidden="true"></span> 项目
+                    </div>
+                    <div class="panel-body">
+                    <a href="pages/tmall.html">仿天猫商城首页</a>
+                    </div>
+                </div>
+
+                <div class="panel panel panel-success">
+                <div class="panel-heading">
+                    <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> 校内活动
+                    </div>
+                    <div class="panel-body">
+                    <p>①、通过所在社团爱心社参加福利院慰问福利院中的儿童陪伴游戏，画画等</p>
+                    <p>②、在所在社团负责宣传部门，通过海报，视频等方式宣传。</p>
+
+                    </div>
+                </div>
+
+                                  <div class="panel panel panel-info">
+                                    <div class="panel-heading">
+                                        <span class="glyphicon glyphicon-book" aria-hidden="true"></span> 技能评价</a>
+                                      </div>
+                                      <div class="panel-body">
+                                        <p>①、语言技能：国语,粤语。
+                                            <p>②、业余技能：熟悉PR,FW,coreldraw,PS,FS,AI,Axure RP等软件操作等
+
+                                      </div>
+                                  </div>
+
+                                  <div class="panel panel panel-warning">
+                                    <div class="panel-heading">
+                                        <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> 荣誉奖励</a>
+                                      </div>
+                                      <div class="panel-body">
+                                        <strong>所持证书：</strong>
+                                        <br>计算机一级证书
+                                       <P>英语一级等级证书
+                                        <p>coreldraw证书
+
+                                      </div>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div> -->
+
+            </div>
+
+        </div>
+        
+    </div>
+
+    <footer>
+        <nav class="navbar-fixed-bottom text-center navbar-default">
+            All images and contents &copy;袁俊亮
+        </nav>
+    </footer>
+</body>
+
+
+</html>
