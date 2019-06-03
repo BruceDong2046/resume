@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>前端学习-CSS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1，height=device-height">
+    <link rel="stylesheet" href="../static/css/study.css">
+    <link href="../images/favicon.png" rel="shortcut icon" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.0/remodal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.0/remodal-default-theme.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="../tmall/styles/basic.css"> -->
+    <link href="../resume/images/favicon.png" rel="shortcut icon" type="image/x-icon">
+     <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+     <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+     <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.0/remodal.min.js"></script>
+    <script src="../static/js/study.js"></script>
+    <!-- <script src="../tmall/scripts/modernizr-1.6.min.js"></script>
+    <script src="../tmall/scripts/showAction.js"></script> -->
+</head>
+<style>
+     body{
+             padding-top: 60px;
+        }
+</style>
+<body>
+    <div class="stars"></div>
+    
+        <header>
+            <nav class="navbar navbar-inverse navbar-fixed-top">
+                <div class="container">
+                  <!-- 品牌和切换被分组以获得更好的移动显示 -->
+                  <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">前端学习</a>
+                  </div>
+              
+                  <!-- 收集导航链接、表单和其他内容进行切换 -->
+                  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                      <li class="active"><a href="#">CSS <span class="sr-only">(current)</span></a>
+                      <li><a href="./study-js.html">JavaScript</a>
+                      <li><a href="./study.html">HTML</a>
+                      <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">资料 <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                          <li><a href="#">ppt</a>
+                          <li><a href="#">源代码</a>
+                          <li><a href="#">扩展阅读</a>
+                        </ul>
+                      
+                    </ul>
+                    <form class="navbar-form navbar-left">
+                      <div class="form-group">
+                        <input type="text" class="form-control" placeholder="请输入关键词">
+                      </div>
+                      <button type="submit" class="btn btn-default">搜索</button>
+                    </form>
+                    <ul class="nav navbar-nav navbar-right">
+                      <li><a href="#">Link</a>
+                      <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                          <li><a href="#">Action</a>
+                          <li><a href="#">Another action</a>
+                          <li><a href="#">Something else here</a>
+                          <li role="separator" class="divider">
+                          <li><a href="#">Separated link</a>
+                        </ul>
+                      
+                    </ul>
+                  </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+              </nav>
+        </header>
+     <div class="container"> 
+        <div class="row ">
+            <!-- 左侧导航栏开始 -->
+        <div class="col-sm-3 col-md-2 sidebar ">
+              <div class="list-group " style="height: 600px;overflow-y:auto;">
+                <div class="list-group-item">
+                  <b>CSS</b>
+                </div>
+                <a title="最新作业" class="list-group-item" href="#">最新作业<span class="sr-only">(current)</span></a>
+                <a title="最新作业" class="list-group-item" href="#">最新公告</a>
+                <a title="最新作业" class="list-group-item" href="#">最新讨论</a>
+                <a title="最新作业" class="list-group-item" href="#">最新作业</a>
+                <a title="最新作业" class="list-group-item" href="#">最新公告</a>
+                <a title="最新作业" class="list-group-item" href="#">最新讨论</a>
+                <a title="最新作业" class="list-group-item" href="#">最新作业</a>
+                <a title="最新作业" class="list-group-item" href="#">最新公告</a>
+                <a title="最新作业" class="list-group-item" href="#">最新讨论</a>
+
+                <div class="list-group-item">
+                    <b>html</b>
+                  </div>
+                  <a title="最新作业" class="list-group-item" href="#">最新作业<span class="sr-only">(current)</span></a>
+                  <a title="最新作业" class="list-group-item" href="#">最新公告</a>
+                  <a title="最新作业" class="list-group-item" href="#">最新讨论</a>
+                  <a title="最新作业" class="list-group-item" href="#">最新作业</a>
+                  <a title="最新作业" class="list-group-item" href="#">最新公告</a>
+                  <a title="最新作业" class="list-group-item" href="#">最新讨论</a>
+                  <a title="最新作业" class="list-group-item" href="#">最新作业</a>
+                  <a title="最新作业" class="list-group-item" href="#">最新公告</a>
+                  <a title="最新作业" class="list-group-item" href="#">最新讨论</a>
+
+                  <div class="list-group-item">
+                      <b>html</b>
+                    </div>
+                    <a title="最新作业" class="list-group-item" href="#">最新作业<span class="sr-only">(current)</span></a>
+                    <a title="最新作业" class="list-group-item" href="#">最新公告</a>
+                    <a title="最新作业" class="list-group-item" href="#">最新讨论</a>
+                    <a title="最新作业" class="list-group-item" href="#">最新作业</a>
+                    <a title="最新作业" class="list-group-item" href="#">最新公告</a>
+                    <a title="最新作业" class="list-group-item" href="#">最新讨论</a>
+                    <a title="最新作业" class="list-group-item" href="#">最新作业</a>
+                    <a title="最新作业" class="list-group-item" href="#">最新公告</a>
+                    <a title="最新作业" class="list-group-item" href="#">最新讨论</a>
+
+                    <div class="list-group-item">
+                      <b>html</b>
+                    </div>
+                    <a title="最新作业" class="list-group-item" href="#">最新作业<span class="sr-only">(current)</span></a>
+                    <a title="最新作业" class="list-group-item" href="#">最新公告</a>
+                    <a title="最新作业" class="list-group-item" href="#">最新讨论</a>
+                    <a title="最新作业" class="list-group-item" href="#">最新作业</a>
+                    <a title="最新作业" class="list-group-item" href="#">最新公告</a>
+                    <a title="最新作业" class="list-group-item" href="#">最新讨论</a>
+                    <a title="最新作业" class="list-group-item" href="#">最新作业</a>
+                    <a title="最新作业" class="list-group-item" href="#">最新公告</a>
+                    <a title="最新作业" class="list-group-item" href="#">最新讨论</a>
+
+                    <div class="list-group-item">
+                      <b>html</b>
+                    </div>
+                    <a title="最新作业" class="list-group-item" href="#">最新作业<span class="sr-only">(current)</span></a>
+                    <a title="最新作业" class="list-group-item" href="#">最新公告</a>
+                    <a title="最新作业" class="list-group-item" href="#">最新讨论</a>
+                    <a title="最新作业" class="list-group-item" href="#">最新作业</a>
+                    <a title="最新作业" class="list-group-item" href="#">最新公告</a>
+                    <a title="最新作业" class="list-group-item" href="#">最新讨论</a>
+                    <a title="最新作业" class="list-group-item" href="#">最新作业</a>
+                    <a title="最新作业" class="list-group-item" href="#">最新公告</a>
+                    <a title="最新作业" class="list-group-item" href="#">最新讨论</a>
+
+                    
+              </div>
+                
+        </div>
+            <!--左侧导航栏结束-->
+            <!--内容开始-->
+        <div class="col-sm-8">
+            <div class="list-group-item">
+                <b>html</b>
+              </div>
+              <a title="最新作业" class="list-group-item" href="#">最新作业<span class="sr-only">(current)</span></a>
+              <a title="最新作业" class="list-group-item" href="#">最新公告</a>
+              <a title="最新作业" class="list-group-item" href="#">最新讨论</a>
+              <a title="最新作业" class="list-group-item" href="#">最新作业</a>
+              <a title="最新作业" class="list-group-item" href="#">最新公告</a>
+              <a title="最新作业" class="list-group-item" href="#">最新讨论</a>
+              <a title="最新作业" class="list-group-item" href="#">最新作业</a>
+              <a title="最新作业" class="list-group-item" href="#">最新公告</a>
+              <a title="最新作业" class="list-group-item" href="#">最新讨论</a>
+        </div>
+          <!--内容结束-->
+          <!--右侧导航栏开始-->
+          <div class="col-sm-1 col-md-2 pull-right ">
+              <div class="list-group-item">
+                  <b>html</b>
+                </div>
+                <a title="最新作业" class="list-group-item" href="#">最新作业<span class="sr-only">(current)</span></a>
+                <a title="最新作业" class="list-group-item" href="#">最新公告</a>
+                <a title="最新作业" class="list-group-item" href="#">最新讨论</a>
+                <a title="最新作业" class="list-group-item" href="#">最新作业</a>
+                <a title="最新作业" class="list-group-item" href="#">最新公告</a>
+                <a title="最新作业" class="list-group-item" href="#">最新讨论</a>
+                <a title="最新作业" class="list-group-item" href="#">最新作业</a>
+                <a title="最新作业" class="list-group-item" href="#">最新公告</a>
+                <a title="最新作业" class="list-group-item" href="#">最新讨论</a>
+          </div>
+          <!--右侧导航栏结束-->
+        </div>
+           
+        </div>
+      
+            <footer>
+                <nav class="navbar-fixed-bottom text-center navbar-default">
+                   <marquee direction=left>你好，欢迎。</marquee>
+                </nav>
+            </footer>
+   
+    
+</body>

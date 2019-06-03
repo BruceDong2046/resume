@@ -22,11 +22,7 @@
     <script src="../tmall/scripts/showAction.js"></script> -->
     <style>
         body{
-            /* background-color: rgb(252, 253, 253);
-            font-family: sans-serif, Microsoft Yahei, Helvetica Neue;
-            zoom: 80%;
-            margin: 0;
-             */
+            
              padding-top: 55px;
         }
         .panel-default {
@@ -35,10 +31,6 @@
             border-top: 0 !important;
 
         }
-        /* .panel-heading{
-            border-top-left-radius: 15px !important;
-            border-top-right-radius: 15px !important;
-        } */
         .redColor{
         color: #C40000 !important;
         }
@@ -48,7 +40,18 @@
         .jumbotron{
             border-radius: 15px !important;
         }
-        
+        .img-desc{position: absolute;
+             left: 0; top: 0; 
+             background-color: #fff; height: 100%;
+             opacity: 0; 
+             width: 100%; 
+        }
+        .port-1{float: left; width: 100%; position: relative; overflow: hidden; text-align: center; border: 4px solid rgba(255, 255, 255, 0.9);}
+        .port-1 .img-desc{opacity: 0.9; top: -100%; transition: 0.5s; color: #000; padding: 45px 20px 20px;}
+        .port-1 img{transition: 0.5s;}
+        .port-1:hover img{transform: scale(1.2);}
+
+        .port-1.effect-1:hover .img-desc{top: 0;}
     </style>
   
 </head>
@@ -107,8 +110,14 @@
             <div class="panel panel-default">
                 <div class="panel-heading" contenteditable="true">Personal Info</div>
                 <div class="panel-body">
-                    <img src="../images/model.jpg" class="img-responsive img-rounded img-thumbnail" alt="Me" onmouseover="this.src='../images/dong.jpg'" onmouseout="this.src='../images/model.jpg'">
-                    <!-- <p class="text-center text-primary">董颖英</p> -->
+                    <div class="port-1 effect-1">
+                    <div class="image-box">
+                     <img src="../images/model.jpg" class="img-responsive img-rounded img-thumbnail" alt="Me" >
+                        </div>
+                    <div class="img-desc">
+                            <img src="../images/dong.jpg" class="img-responsive img-rounded img-thumbnail" alt="Me" >
+                    </div>
+                </div>
                     <h2 class="text-center text-primary" contenteditable="true">董颖英</h1>
                 <h4 class="text-center text-primary" contenteditable="true">Javascript/ Web / 前端</h4>
                     <address>
@@ -134,18 +143,6 @@
                             </div>
                         </div>
                     </div>
-
-                    <!-- <div class="row">
-                        <div class="col-sm-3">
-                            <span class="text-success">IOS</span>
-                        </div>
-                        <div class="col-sm-9">
-                            <div class="progress">
-                                <div class="progress-bar progress-bar-striped progress-bar-success active" style="width: 85%"></div>
-                            </div>
-                        </div>
-                    </div> -->
-
                     <div class="row">
                         <div class="col-sm-3">
                             <span class="text-info"></span><label class="left-label" contenteditable="true">JavaScript</label>
@@ -186,8 +183,14 @@
             <div class="panel panel-primary">
                 <div class="panel panel-heading">ContactMe</div>
                 <div class="panel-body">
-                    
-                    <img src="../resume/images/dong.jpg" class="img-responsive img-rounded img-thumbnail" alt="Me" onmouseover="this.src='../resume/images/model.jpg'" onmouseout="this.src='../resume/images/dong.jpg'">
+                        <div class="port-1 effect-1">
+                                <div class="image-box">
+                                 <img src="../images/dong.jpg" class="img-responsive img-rounded img-thumbnail" alt="Me" >
+                                    </div>
+                                <div class="img-desc">
+                                        <img src="../images/model.jpg" class="img-responsive img-rounded img-thumbnail" alt="Me" >
+                                </div>
+                            </div>
                 </div>
             </div>
 
@@ -274,7 +277,7 @@
 
     <footer>
         <nav class="navbar-fixed-bottom text-center navbar-default">
-            All images and contents &copy;袁俊亮
+            
         </nav>
     </footer>
 </body>

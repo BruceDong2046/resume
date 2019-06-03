@@ -24,10 +24,19 @@
             border-top: 0 !important;
 
         }
-        /* .panel-heading{
-            border-top-left-radius: 15px !important;
-            border-top-right-radius: 15px !important;
-        } */
+        .img-desc{position: absolute;
+             left: 0; top: 0; 
+             background-color: #fff; height: 100%;
+             opacity: 0; 
+             width: 100%;
+
+        }
+        .port-1{float: left; width: 100%; position: relative; overflow: hidden; text-align: center; border: 4px solid rgba(255, 255, 255, 0.9);}
+        .port-1 .img-desc{opacity: 0.9; top: -150%; transition: 0.5s; color: #000; padding: 45px 20px 20px;}
+        .port-1 img{transition: 0.5s;}
+        .port-1:hover img{transform: scale(1.2);}
+
+        .port-1.effect-1:hover .img-desc{top: 0;}
         .redColor{
         color: #C40000 !important;
         }
@@ -99,7 +108,14 @@
             <div class="panel panel-default">
                 <div class="panel-heading">Personal Info</div>
                 <div class="panel-body">
-                    <img src="../resume/images/name.jpg" class="img-responsive img-rounded img-thumbnail" alt="Me" onmouseover="this.src='../resume/images/dong.jpg'" onmouseout="this.src='../resume/images/name.jpg'">
+                    <div class="port-1 effect-1">
+                        <div class="image-box">
+                         <img src="images/name.jpg" class="img-responsive img-rounded img-thumbnail" alt="Me" >
+                            </div>
+                        <div class="img-desc">
+                                <img src="images/dong.jpg" class="img-responsive img-rounded img-thumbnail" alt="Me" >
+                        </div>
+                    </div>
                     <!-- <p class="text-center text-primary">董颖英</p> -->
                     <h2 class="text-center text-primary">董颖英</h1>
                 <h4 class="text-center text-primary">Javascript/ Web / 前端</h4>
@@ -166,30 +182,15 @@
             <div class="panel panel-primary">
                 <div class="panel panel-heading">ContactMe</div>
                 <div class="panel-body">
-                    <!-- <form class="form-horizontal">
-                        <div class="form-group">
-                            <label for="email" class="col-sm-2 control-label">Email</label>
-                            <div class="col-sm-10">
-                                <input type="email" id="email" class="form-control" placeholder="Email">
+                    
+                    <div class="port-1 effect-1">
+                        <div class="image-box">
+                         <img src="images/dong.jpg" class="img-responsive img-rounded img-thumbnail" alt="Me" >
                             </div>
+                        <div class="img-desc">
+                                <img src="images/name.jpg" class="img-responsive img-rounded img-thumbnail" alt="Me" >
                         </div>
-
-                        <div class="form-group">
-                            <label for="name" class="col-sm-2 control-label">Name</label>
-                            <div class="col-sm-10">
-                                <input type="text" id="name" class="form-control" placeholder="Name">
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="col-sm-10 col-sm-offset-2">
-                                <button type="submit" class="btn btn-primary pull-right">Send</button>
-                                <div class="clearfix"></div>
-                            </div>
-                        </div>
-
-                    </form> -->
-                    <img src="../resume/images/dong.jpg" class="img-responsive img-rounded img-thumbnail" alt="Me" onmouseover="this.src='../resume/images/name.jpg'" onmouseout="this.src='../resume/images/dong.jpg'">
+                    </div>
                 </div>
             </div>
 
@@ -208,120 +209,6 @@
             </div>
 
             <div class="panel-group" id="accoradion">
-                <!-- <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <div class="panel-title">
-                            <span class="glyphicon glyphicon-calendar" aria-hidden="false"></span><span class="label label-default"><a href="#collapseOne" data-toggle="collapse" data-parent="#accoradion">工作经验</a></span>
-                        </div>
-                        <div id="collapseOne" class="panel-collapse collapse">
-                            <div class="panel-body">
-                                <ul class="list-group">
-                                    <li class="list-group-item list-group-item-success">
-                                        <div class="row">
-                                            <div class="col-sm-4">2015/3/1-至今</div>
-                                            <div class="col-sm-4">XXX公司</div>
-                                            <div class="col-sm-4">IOS开发工程师</div>
-                                        </div>
-                                    </li>
-
-                                    <li class="list-group-item list-group-item-warning">
-                                        <div class="row">
-                                            <div class="col-sm-4">2015/3/1-至今</div>
-                                            <div class="col-sm-4">XXX公司</div>
-                                            <div class="col-sm-4">IOS开发工程师</div>
-                                        </div>
-                                    </li>
-
-                                    <li class="list-group-item list-group-item-info">
-                                        <div class="row">
-                                            <div class="col-sm-4">2015/3/1-至今</div>
-                                            <div class="col-sm-4">XXX公司</div>
-                                            <div class="col-sm-4">IOS开发工程师</div>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="panel-heading">
-                        <div class="panel-title">
-                            <span class="glyphicon glyphicon-user" aria-hidden="true"></span><a href="#collapseTwo" data-toggle="collapse" data-parent="#accoradion">教育经历</a>
-                        </div>
-
-
-                        <div id="collapseTwo" class="panel-collapse collapse">
-                            <div class="panel-body">
-                                <ul class="list-group">
-                                    <li class="list-group-item list-group-item-success">
-                                        <div class="row">
-                                            <div class="col-sm-4">2015/3/1-至今</div>
-                                            <div class="col-sm-4">XXX公司</div>
-                                            <div class="col-sm-4">IOS开发工程师</div>
-                                        </div>
-                                    </li>
-
-                                    <li class="list-group-item list-group-item-warning">
-                                        <div class="row">
-                                            <div class="col-sm-4">2015/3/1-至今</div>
-                                            <div class="col-sm-4">XXX公司</div>
-                                            <div class="col-sm-4">IOS开发工程师</div>
-                                        </div>
-                                    </li>
-
-                                    <li class="list-group-item list-group-item-info">
-                                        <div class="row">
-                                            <div class="col-sm-4">2015/3/1-至今</div>
-                                            <div class="col-sm-4">XXX公司</div>
-                                            <div class="col-sm-4">IOS开发工程师</div>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="panel-heading">
-                        <div class="panel-title">
-                            <span class="glyphicon glyphicon-flag" aria-hidden="false"></span><a href="#collapseThree" data-toggle="collapse" data-parent="#accoradion">项目经验</a>
-                        </div>
-                        <div id="collapseThree" class="panel-collapse collapse">
-                            <div class="panel-body">
-                                <div id="divCarousel" class="carousel slide" data-ride="carousel">
-                                    <ol class="carousel-indicators">
-                                        <li data-target="#divCarousel" data-slide-to="0" class="active"></li>
-                                        <li data-target="#divCarousel" data-slide-to="1"></li>
-                                        <li data-target="#divCarousel" data-slide-to="2"></li>
-                                    </ol>
-                                    <li class="list-group-item list-group-item-warning">
-                                            <div class="row">
-                                                <div class="col-sm-4">2015/3/1-至今</div>
-                                                <div class="col-sm-4">XXX公司</div>
-                                                <div class="col-sm-4">IOS开发工程师</div>
-                                            </div>
-                                        </li>
-                                    <!-- <div class="carousel-inner">
-                                        <div class="item active">
-                                            <img src="img/1.png" alt="" class="img-responsive img-rounded">
-                                            <div class="carousel-caption">...</div>
-                                        </div>
-
-                                        <div class="item">
-                                            <img src="img/1.png" alt="" class="img-responsive img-rounded">
-                                            <div class="carousel-caption">...</div>
-                                        </div>
-
-                                        <div class="item">
-                                            <img src="img/1.png" alt="" class="img-responsive img-rounded">
-                                            <div class="carousel-caption">...</div>
-                                        </div>
-                                    </div> -->
-                                    <!-- <a href="#divCarousel" class="left carousel-control" data-slide="prev">
-                                        <span class="glyphicon glyphicon-chevron-left"></span>
-                                    </a>
-                                    <a href="#divCarousel" class="right carousel-control" data-slide="next">
-                                        <span class="glyphicon glyphicon-chevron-right"></span>
-                                    </a> -->
                                 </div>
 
                                   <div class="panel panel-default">
@@ -340,7 +227,7 @@
                                         <span class="glyphicon glyphicon-flag" aria-hidden="true"></span> 项目
                                       </div>
                                       <div class="panel-body">
-                                        <a href="pages/tmall.html">仿天猫商城首页</a>
+                                        <a href="https://codepen.io/brucedong2046/pen/oRmQpR" target="_blank">一个关于恩雅的页面</a>
                                         <!-- <br><a href="pages/resume.html">可编辑简历模板</a> -->
                                       </div>
                                   </div>
