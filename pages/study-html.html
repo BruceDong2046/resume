@@ -84,11 +84,29 @@
     <!-- <header id="nav"><b>HTML</b></header> -->
 <b>HTML</b>
 <ul> 
-  <a class="nav-link list-group-item" href="#Introduction" rel="internal"><li class="item1">Introduction</li><span class="sr-only">(current)</span></a>
-      <a class="nav-link list-group-item" href="#What_you_should_already_know" rel="internal"><li class="item2">What you should already know</li></a>
-      <a class="nav-link list-group-item" href="#JavaScript_and_Java" rel="internal"><li class="item3">JavaScript and Java</li></a>
-      <a class="nav-link list-group-item" href="#Hello_world" rel="internal"><li class="item4">Hello world</li></a>
-      <a class="nav-link list-group-item" href="#Variables" rel="internal"><li class="item5">Variables</li></a>
+  <a class="nav-link list-group-item" href="#Introduction" rel="internal"><li class="item1">HTML 简介</li><span class="sr-only">(current)</span></a>
+      <a class="nav-link list-group-item" href="#Editor" rel="internal"><li class="item2">编辑和运行环境</li></a>
+      <a class="nav-link list-group-item" href="#Basic" rel="internal"><li class="item3">基本结构</li></a>
+      <a class="nav-link list-group-item" href="#Hello_world" rel="internal"><li class="item4">元素</li></a>
+      <a class="nav-link list-group-item" href="#Variables" rel="internal"><li class="item5">HTML的全局属性</li></a>
+      <a class="nav-link list-group-item" href="#Declaring_variables" rel="internal"><li class="item6">Declaring variables</li></a>
+      <a class="nav-link list-group-item" href="#Variable_scope" rel="internal"><li class="item7">Variable scope</li></a>
+      <a class="nav-link list-group-item" href="#Global_variables" rel="internal"><li class="item8">Global variables</li></a>
+      <a class="nav-link list-group-item" href="#Constants" rel="internal"><li class="item9">Constants</li></a>
+      <a class="nav-link list-group-item" href="#Data_types" rel="internal"><li class="item10">Data types</li></a>
+      <a class="nav-link list-group-item" href="#if...else_statement" rel="internal"><li class="item11">if...else statement</li></a>
+      <a class="nav-link list-group-item" href="#while_statement" rel="internal"><li class="item12">while statement</li></a>
+      <a class="nav-link list-group-item" href="#Function_declarations" rel="internal"><li class="item13">Function declarations</li></a>
+      <a class="nav-link list-group-item" href="#Reference" rel="internal"><li class="item14">Reference</li></a>
+</ul>
+
+<b>123</b>
+<ul> 
+  <a class="nav-link list-group-item" href="#Introduction" rel="internal"><li class="item1">HTML 简介</li><span class="sr-only">(current)</span></a>
+      <a class="nav-link list-group-item" href="#Editor" rel="internal"><li class="item2">编辑和运行环境</li></a>
+      <a class="nav-link list-group-item" href="#Basic" rel="internal"><li class="item3">基本结构</li></a>
+      <a class="nav-link list-group-item" href="#Hello_world" rel="internal"><li class="item4">元素</li></a>
+      <a class="nav-link list-group-item" href="#Variables" rel="internal"><li class="item5">HTML的全局属性</li></a>
       <a class="nav-link list-group-item" href="#Declaring_variables" rel="internal"><li class="item6">Declaring variables</li></a>
       <a class="nav-link list-group-item" href="#Variable_scope" rel="internal"><li class="item7">Variable scope</li></a>
       <a class="nav-link list-group-item" href="#Global_variables" rel="internal"><li class="item8">Global variables</li></a>
@@ -103,27 +121,28 @@
 </nav>	
 <main id="main-doc">
 <section class="main-section" id="Introduction">
-  <header>Introduction</header>
+  <header>什么是 HTML？</header>
   <article>  
-    <p>JavaScript is a cross-platform, object-oriented scripting language. It is a small and lightweight language. Inside a host environment (for example, a web browser), JavaScript can be connected to the objects of its environment to provide programmatic control over them.</p>
+    <p>HTML 是用来描述网页的一种语言。</p>
 
-<p>JavaScript contains a standard library of objects, such as Array, Date, and Math, and a core set of language elements such as operators, control structures, and statements. Core JavaScript can be extended for a variety of purposes by supplementing it with additional objects; for example:</p>
+<p>HTML 指的是超文本标记语言 (Hyper Text Markup Language)</p>
 
-<li>Client-side JavaScript extends the core language by supplying objects to control a browser and its Document Object Model (DOM). For example, client-side extensions allow an application to place elements on an HTML form and respond to user events such as mouse clicks, form input, and page navigation.</li>
-<li>Server-side JavaScript extends the core language by supplying objects relevant to running JavaScript on a server. For example, server-side extensions allow an application to communicate with a database, provide continuity of information from one invocation to another of the application, or perform file manipulations on a server.</li>
+<li>HTML 不是一种编程语言，而是一种标记语言 (markup language)</li>
+<li>标记语言是一套标记标签 (markup tag)</li>
+<li>HTML 使用标记标签来描述网页</li>
     </artice>
   </section>
-<section class="main-section" id="What_you_should_already_know">
-  <header>What you should already know</header>
+<section class="main-section" id="Editor">
+  <header>使用 Notepad++ 或 VS code 来编写 HTML</header>
   <article>
-    <p>This guide assumes you have the following basic background:</p>
+    <p>可以使用专业的 HTML 编辑器来编辑 HTML：</p>
 
-    <li>A general understanding of the Internet and the World Wide Web (WWW).</li>
-    <li>Good working knowledge of HyperText Markup Language (HTML).</li>
-<li>Some programming experience. If you are new to programming, try one of the tutorials linked on the main page about JavaScript.</li>
+    <li>Notepad++</li>
+    <li>Adobe Dreamweaver</li>
+    <li>VS code</li>
     </artice>
   </section>
-<section class="main-section" id="JavaScript_and_Java">
+<section class="main-section" id="Basic">
   <header>JavaScript and Java</header>
   <article>
   <p>JavaScript and Java are similar in some ways but fundamentally different in some others. The JavaScript language resembles Java but does not have Java's static typing and strong type checking. JavaScript follows most Java expression syntax, naming conventions and basic control-flow constructs which was the reason why it was renamed from LiveScript to JavaScript.</p>
